@@ -1,0 +1,112 @@
+body {
+    background:linear-gradient(60deg,rgb(0, 0, 0),rgb(64, 0, 255));
+    color:white;
+    text-shadow: 0 0 3px blue;
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+    letter-spacing: normal;
+    min-height: 100vh;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Gulf_of_Eilat_%28Red_Sea%29_coral_reefs.jpg/450px-Gulf_of_Eilat_%28Red_Sea%29_coral_reefs.jpg");
+    background-clip: content-box;
+    background-position-x: center;
+    background-repeat:repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    background-attachment: fixed;
+}
+@media  screen and (max-width: 768px) {
+    body {
+        width: 100% !important;
+    }
+    main {
+        width: 88% !important;
+    }
+}
+
+::-webkit-scrollbar-thumb {
+    background: #434343;
+    border-radius: 16px;
+    box-shadow: inset 2px 2px 2px hsl(0deg 0% 100% / 25%), inset -2px -2px 2px rgb(0 0 0 / 25%);
+}
+
+::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(0, 0, 0);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+#glowna{
+    margin-left:auto;
+    margin-right:auto;
+    width: 80%;
+}
+
+li {
+    text-decoration: none;
+    list-style-type: none;
+    font-size:48px;
+    font-family: cursive;
+}
+.tresc,article {
+    width: 100%;
+    min-height: 20px;
+     background:linear-gradient(45deg,rgba(0, 0, 255, 0.584),black);
+     border-radius: 28px;
+     margin-top: 120px;
+     padding: 28px;
+     box-shadow: 0 0 20px green;
+     text-shadow: 0 0 3px rgb(0, 0, 0);
+     font-size:28px;
+}
+legend {
+    margin-top:-100px;
+    position: absolute;
+    font-size: 48px;
+    background:linear-gradient(45deg,rgba(0, 128, 0, 0.477),black);
+    border-radius: 28px;
+    box-shadow:0 0 20px yellowgreen;
+    padding: 8px;
+    margin-left: 20px;
+}
+h1{
+    margin:0;
+}
+ul {
+    left:0;
+    margin:0;
+    padding: 0;
+}
+h1{ 
+    font-size: 68px;
+}
+
+.galeria{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.galeria img {
+    width: 328px;
+    height: 288px;
+    border:3px solid green;
+    border-radius: 28px;
+    float: left;
+    margin: 10px;
+}
