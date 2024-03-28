@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cedarville+Cursive&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body {
     background:linear-gradient(60deg,rgb(0, 0, 0),rgb(64, 0, 255));
     color:white;
@@ -18,6 +21,7 @@ body {
     background-size: cover;
     overflow-x: hidden;
     background-attachment: fixed;
+    font-family:cursive;
 }
 @media  screen and (max-width: 768px) {
     body {
@@ -48,7 +52,9 @@ main {
     justify-content: center;
     align-items: center;
     width: 100%;
-    
+}
+main div {
+    width: 100%;
 }
 #glowna{
     margin-left:auto;
@@ -71,7 +77,10 @@ li {
      padding: 28px;
      box-shadow: 0 0 20px green;
      text-shadow: 0 0 3px rgb(0, 0, 0);
-     font-size:28px;
+     font-size:40px;
+     text-align: center;
+     font-family: "Caveat", cursive;
+     font-weight: 900;
 }
 legend {
     margin-top:-100px;
@@ -109,4 +118,57 @@ h1{
     border-radius: 28px;
     float: left;
     margin: 10px;
+    cursor: pointer;
+}
+
+.wysrodkuj {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+
+
+slider img {
+    width: 30%;
+    height: 288px;
+    cursor: pointer;
+}
+
+
+.galeria div > div {
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24%;
+    height: 288px;
+    font-size: 48px;
+    cursor: pointer;
+    margin-left: 0%;
+    font-family: "Kanit", sans-serif;;
+    font-weight: 800;
+}
+
+
+.galeria div:hover > img {
+    opacity: 0.2;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+@media screen and (max-width:1000px) {
+    .galeria div > div { 
+        margin-left:100px !important;
+    }
+    #glowna {
+        max-width: 94%;
+        width: auto;
+    }
 }
