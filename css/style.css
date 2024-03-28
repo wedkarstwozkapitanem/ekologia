@@ -23,12 +23,12 @@ body {
     background-attachment: fixed;
     font-family:cursive;
 }
-@media  screen and (max-width: 768px) {
-    body {
-        width: 100% !important;
+@media  screen and (max-width: 1000px) {
+    .tresc, article {
+        padding: 0 !important;
     }
-    main {
-        width: 88% !important;
+    legend {
+        margin-top: -80px !important;
     }
 }
 
@@ -52,6 +52,7 @@ main {
     justify-content: center;
     align-items: center;
     width: 100%;
+    position: relative;
 }
 main div {
     width: 100%;
@@ -131,8 +132,8 @@ h1{
 
 
 slider img {
-    width: 30%;
-    height: 288px;
+    max-width: 30%;
+    max-height: 288px;
     cursor: pointer;
 }
 
@@ -143,13 +144,12 @@ slider img {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 24%;
-    height: 288px;
+     height: 288px; 
     font-size: 48px;
     cursor: pointer;
-    margin-left: 0%;
-    font-family: "Kanit", sans-serif;;
+    font-family: "Kanit", sans-serif;
     font-weight: 800;
+    left: 0;
 }
 
 
@@ -164,11 +164,40 @@ a {
 
 
 @media screen and (max-width:1000px) {
-    .galeria div > div { 
-        margin-left:100px !important;
-    }
     #glowna {
-        max-width: 94%;
+        width: 94%;
         width: auto;
     }
 }
+a div {
+    position: relative;
+}
+
+
+@media  screen and (max-width:338px) {
+    .galeria img {
+        max-width: 93% !important;
+        margin:2% !important;
+    }
+    h1 {
+        font-size: 28px;
+    }
+
+    .galeria div > div {
+        font-size: 24px;
+    }
+    #glowna { 
+        width: 100% !important;
+        margin:0;
+    }
+    main {
+        width: 100% !important;
+    }
+    .tresc, article {
+        padding: 0;
+    }
+    body {
+        margin:0;
+    }
+}
+
