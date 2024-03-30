@@ -13,7 +13,7 @@ body {
     text-decoration: none;
     text-transform: none;
     letter-spacing: normal;
-    min-height: 100vh;
+    min-height: 80vh;
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Gulf_of_Eilat_%28Red_Sea%29_coral_reefs.jpg/450px-Gulf_of_Eilat_%28Red_Sea%29_coral_reefs.jpg");
     background-clip: content-box;
     background-position-x: center;
